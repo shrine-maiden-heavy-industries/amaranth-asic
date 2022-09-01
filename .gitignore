@@ -1,7 +1,8 @@
-build/
+/build
 __pycache__/
 .venv/
 .eggs/
+*.egg-info/
 
 *.pyc
 
