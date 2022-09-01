@@ -4,7 +4,6 @@ import re
 import os
 import textwrap
 from abc                 import abstractproperty
-from types import FunctionType
 from typing              import Any, Tuple, Union
 
 from amaranth._toolchain import *
@@ -28,8 +27,7 @@ from ..                  import __version__
 from ..support           import strutils
 
 __doc__ = '''\
-OpenLANE Platform
------------------
+
 
 '''
 
@@ -39,9 +37,6 @@ __all__ = (
 
 class OpenLANEPlatform(TemplatedPlatform):
 	'''
-	OpenLANE ASIC Flow
-	------------------
-
 	.. note::
 
 		See https://github.com/The-OpenROAD-Project/OpenLane#setting-up-openlane for instructions on
@@ -387,7 +382,7 @@ class OpenLANEPlatform(TemplatedPlatform):
 
 		return plan
 
-	def create_missing_domain(self, ports: list[Any]) -> FunctionType[list[Any], Union[Module, None]]:
+	def create_missing_domain(self, ports: list[Any]) -> Any:
 		def create_domain(name: str) -> Union[Module, None]:
 			if name != 'sync' or self.default_clk is None:
 				return None

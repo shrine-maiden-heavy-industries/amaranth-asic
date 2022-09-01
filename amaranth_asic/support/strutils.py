@@ -31,7 +31,7 @@ def tcl_escape(string: Any) -> str:
 	else:
 		string = str(string)
 
-	return f'{{{re.sub(r"([{}\\])", r"\\\1", string)}}}'
+	return '{' + re.sub(r"([{}\\])", r"\\\1", string) + '}'
 
 def tcl_quote(string: Any) -> str:
 	if isinstance(string, Markup):
@@ -39,4 +39,4 @@ def tcl_quote(string: Any) -> str:
 	else:
 		string = str(string)
 
-	return f'"{re.sub(r"([$[\\]])", r"\\\1", string)}"'
+	return '"' + re.sub(r"([$[\\]])", r"\\\1", string) + '"'

@@ -37,12 +37,11 @@ __all__ = (
 #  * LS/MS/HS - Low/Medium/High Speed
 
 class Sky130APlatform(OpenLANEPlatform):
-	'''
-	OpenLANE - Sky130A PDK Platform
-	-------------------------------
+	'''OpenLANE - Sky130A PDK Platform
+
 	.. warning::
 
-		***DO NOT** use any of the sky130A platforms unless you absolutely are sure
+		**DO NOT** use any of the sky130A platforms unless you absolutely are sure
 		you know what you're doing, use the sky130B platforms instead!
 
 	This is the base platform the specifies the the sky130A PDK.
@@ -60,12 +59,11 @@ class Sky130APlatform(OpenLANEPlatform):
 	pdk = 'sky130A'
 
 class Sky130AHighDensityPlatform(Sky130APlatform):
-	'''
-	OpenLANE - Sky130A High Density
-	-------------------------------
+	'''OpenLANE - Sky130A High Density
+
 	.. warning::
 
-		***DO NOT** use any of the sky130A platforms unless you absolutely are sure
+		**DO NOT** use any of the sky130A platforms unless you absolutely are sure
 		you know what you're doing, use the sky130B platforms instead!
 
 	This platform is a specialization of the :py:class:`Sky130APlatform` that sets
@@ -75,12 +73,11 @@ class Sky130AHighDensityPlatform(Sky130APlatform):
 	cell_library = 'sky130_fd_sc_hd'
 
 class Sky130AHighSpeedPlatform(Sky130APlatform):
-	'''
-	OpenLANE - Sky130A High Speed
-	-----------------------------
+	'''OpenLANE - Sky130A High Speed
+
 	.. warning::
 
-		***DO NOT** use any of the sky130A platforms unless you absolutely are sure
+		**DO NOT** use any of the sky130A platforms unless you absolutely are sure
 		you know what you're doing, use the sky130B platforms instead!
 
 	This platform is a specialization of the :py:class:`Sky130APlatform` that sets
@@ -90,12 +87,11 @@ class Sky130AHighSpeedPlatform(Sky130APlatform):
 	cell_library = 'sky130_fd_sc_hs'
 
 class Sky130AMediumSpeedPlatform(Sky130APlatform):
-	'''
-	OpenLANE - Sky130A Medium Speed
-	-------------------------------
+	'''OpenLANE - Sky130A Medium Speed
+
 	.. warning::
 
-		***DO NOT** use any of the sky130A platforms unless you absolutely are sure
+		**DO NOT** use any of the sky130A platforms unless you absolutely are sure
 		you know what you're doing, use the sky130B platforms instead!
 
 	This platform is a specialization of the :py:class:`Sky130APlatform` that sets
@@ -105,12 +101,11 @@ class Sky130AMediumSpeedPlatform(Sky130APlatform):
 	cell_library = 'sky130_fd_sc_ms'
 
 class Sky130ALowSpeedPlatform(Sky130APlatform):
-	'''
-	OpenLANE - Sky130A Low Speed
-	----------------------------
+	'''OpenLANE - Sky130A Low Speed
+
 	.. warning::
 
-		***DO NOT** use any of the sky130A platforms unless you absolutely are sure
+		**DO NOT** use any of the sky130A platforms unless you absolutely are sure
 		you know what you're doing, use the sky130B platforms instead!
 
 	This platform is a specialization of the :py:class:`Sky130APlatform` that sets
@@ -120,12 +115,11 @@ class Sky130ALowSpeedPlatform(Sky130APlatform):
 	cell_library = 'sky130_fd_sc_ls'
 
 class Sky130AHighDensityLowLeakagePlatform(Sky130APlatform):
-	'''
-	OpenLANE - Sky130A High Density Low Leakage
-	-------------------------------------------
+	'''OpenLANE - Sky130A High Density Low Leakage
+
 	.. warning::
 
-		***DO NOT** use any of the sky130A platforms unless you absolutely are sure
+		**DO NOT** use any of the sky130A platforms unless you absolutely are sure
 		you know what you're doing, use the sky130B platforms instead!
 
 	This platform is a specialization of the :py:class:`Sky130APlatform` that sets
@@ -135,9 +129,8 @@ class Sky130AHighDensityLowLeakagePlatform(Sky130APlatform):
 	cell_library = 'sky130_fd_sc_hdll'
 
 class Sky130BPlatform(OpenLANEPlatform):
-	'''
-	OpenLANE - Sky130B PDK Platform
-	-------------------------------
+	'''OpenLANE - Sky130B PDK Platform
+
 
 	This is the base platform the specifies the the sky130A PDK.
 
@@ -154,9 +147,7 @@ class Sky130BPlatform(OpenLANEPlatform):
 	pdk = 'sky130B'
 
 class Sky130BHighDensityPlatform(Sky130BPlatform):
-	'''
-	OpenLANE - Sky130B High Density
-	-------------------------------
+	'''OpenLANE - Sky130B High Density
 
 	This platform is a specialization of the :py:class:`Sky130BPlatform` that sets
 	the cell library to ``sky130_fd_sc_hd`` for the high-density standard cells.
@@ -165,9 +156,8 @@ class Sky130BHighDensityPlatform(Sky130BPlatform):
 	cell_library = 'sky130_fd_sc_hd'
 
 class Sky130BHighSpeedPlatform(Sky130BPlatform):
-	'''
-	OpenLANE - Sky130B High Speed
-	-----------------------------
+	'''OpenLANE - Sky130B High Speed
+
 
 	This platform is a specialization of the :py:class:`Sky130BPlatform` that sets
 	the cell library to ``sky130_fd_sc_hs`` for the high speed standard cells.
@@ -176,9 +166,8 @@ class Sky130BHighSpeedPlatform(Sky130BPlatform):
 	cell_library = 'sky130_fd_sc_hs'
 
 class Sky130BMediumSpeedPlatform(Sky130BPlatform):
-	'''
-	OpenLANE - Sky130B Medium Speed
-	-------------------------------
+	'''OpenLANE - Sky130B Medium Speed
+
 
 	This platform is a specialization of the :py:class:`Sky130BPlatform` that sets
 	the cell library to ``sky130_fd_sc_ms`` for the medium speed standard cells.
@@ -187,9 +176,8 @@ class Sky130BMediumSpeedPlatform(Sky130BPlatform):
 	cell_library = 'sky130_fd_sc_ms'
 
 class Sky130BLowSpeedPlatform(Sky130BPlatform):
-	'''
-	OpenLANE - Sky130B Low Speed
-	----------------------------
+	'''OpenLANE - Sky130B Low Speed
+
 
 	This platform is a specialization of the :py:class:`Sky130BPlatform` that sets
 	the cell library to ``sky130_fd_sc_ls`` for the low speed standard cells.
@@ -198,9 +186,7 @@ class Sky130BLowSpeedPlatform(Sky130BPlatform):
 	cell_library = 'sky130_fd_sc_ls'
 
 class Sky130BHighDensityLowLeakagePlatform(Sky130BPlatform):
-	'''
-	OpenLANE - Sky130B High Density Low Leakage
-	-------------------------------------------
+	'''OpenLANE - Sky130B High Density Low Leakage
 
 	This platform is a specialization of the :py:class:`Sky130BPlatform` that sets
 	the cell library to ``sky130_fd_sc_hdll`` for the high-density low-leakage standard cells.
