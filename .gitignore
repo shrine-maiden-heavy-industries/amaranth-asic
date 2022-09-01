@@ -1,0 +1,11 @@
+build/
+__pycache__/
+.venv/
+.eggs/
+
+*.pyc
+
+*.vcd
+*.gtkw
+*.hex*
+*.bin

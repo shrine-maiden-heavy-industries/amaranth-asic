@@ -1,0 +1,1 @@
+amaranth @ git+https://github.com/amaranth-lang/amaranth.git@main
